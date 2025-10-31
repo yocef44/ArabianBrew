@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arabian Brew Coffee Shop</title>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #2c1810, #f4e4bc);
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            background: url('https://via.placeholder.com/1200x400/8b4513/ffffff?text=Arabian+Cafe+Interior') no-repeat center/cover;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            position: relative;
+            color: #fff;
+        }
+        header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0,0,0,0.5);
+        }
+        h1, h2 {
+            font-family: 'Amiri', serif;
+        }
+        h1 { font-size: 3em; z-index: 1; position: relative; }
+        .about { padding: 50px; background: rgba(255,255,255,0.9); text-align: center; }
+        .menu { padding: 50px; background: #f4e4bc; }
+        .menu h2 { color: #8b0000; text-align: center; }
+        .category { margin-bottom: 40px; }
+        .item { margin: 20px; display: inline-block; width: 250px; background: #fff; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); transition: transform 0.3s; }
+        .item:hover { transform: scale(1.05); }
+        .gallery { padding: 50px; text-align: center; background: #008080; color: #fff; }
+        .gallery img { width: 200px; margin: 10px; border-radius: 10px; }
+        .contact { padding: 50px; background: rgba(255,255,255,0.9); }
+        form { max-width: 400px; margin: 0 auto; }
+        input, textarea { width: 100%; padding: 10px; margin: 10px 0; border: 1px solid #ccc; border-radius: 5px; }
+        button { background: #8b0000; color: #fff; padding: 10px; border: none; border-radius: 5px; cursor: pointer; }
+        footer { background: #2c1810; color: #fff; text-align: center; padding: 20px; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Arabian Brew</h1>
+        <p>Authentic Arabic Coffee & Delights – Where Tradition Meets Flavor</p>
+    </header>
+    
+    <section class="about">
+        <h2>About Us</h2>
+        <p>Step into Arabian Brew, inspired by the timeless qahwas of the Middle East. Our shop honors centuries-old traditions, from brewing Turkish coffee in a cezve to serving baklava fresh from the oven. Relax on takht seating, enjoy shisha, and immerse yourself in the warmth of Arabian hospitality. "A cup of coffee commits one to forty years of friendship." – Arabian Proverb</p>
+    </section>
+    
+    <section class="menu">
+        <h2>Our Menu</h2>
+        
+        <div class="category">
+            <h3>Hot Beverages</h3>
+            <div class="item"><h4>Turkish Coffee</h4><p>Rich, unfiltered coffee brewed with cardamom. (قهوة تركية)</p><strong>$4.50</strong></div>
+            <div class="item"><h4>Arabic Tea</h4><p>Black tea with mint and lemon. (شاي عربي)</p><strong>$3.00</strong></div>
+            <div class="item"><h4>Sahlab</h4><p>Creamy drink with cinnamon and nuts. (سحلب)</p><strong>$5.00</strong></div>
+            <div class="item"><h4>Qahwa</h4><p>Gulf coffee with saffron. (قهوة)</p><strong>$4.00</strong></div>
+        </div>
+        
+        <div class="category">
+            <h3>Cold Drinks</h3>
+            <div class="item"><h4>Mint Lemonade</h4><p>Fresh with rose syrup. (ليمون نعناع)</p><strong>$3.50</strong></div>
+            <div class="item"><h4>Tamarind Juice</h4><p>Tangy and natural. (عصير تمر هندي)</p><strong>$4.00</strong></div>
+            <div class="item"><h4>Hibiscus Tea</h4><p>Tart and vibrant. (كركديه)</p><strong>$3.50</strong></div>
+            <div class="item"><h4>Arabian Smoothie</h4><p>Dates, bananas, yogurt. (سموذي عربي)</p><strong>$5.50</strong></div>
+        </div>
+        
+        <div class="category">
+            <h3>Pastries and Sweets</h3>
+            <div class="item"><h4>Baklava</h4><p>Nuts and honey layers. (بقلاوة)</p><strong>$6.00</strong></div>
+            <div class="item"><h4>Halva</h4><p>Sweet sunflower seed confection. (حلوى)</p><strong>$4.50</strong></div>
+            <div class="item"><h4>Ma'amoul</h4><p>Date-stuffed cookies. (معمول)</p><strong>$5.00</strong></div>
+            <div class="item"><h4>Kunafa</h4><p>Cheese-filled pastry. (كنافة)</p><strong>$7.00</strong></div>
+        </div>
+        
+        <div class="category">
+            <h3>Specialties</h3>
+            <div class="item"><h4>Shisha</h4><p>Flavored hookah session. (شيشة)</p><strong>$15.00</strong></div>
+            <div class="item"><h4>Mezze Platter</h4><p>Olives, hummus, falafel. (مزة عربية)</p><strong>$12.00</strong></div>
+            <div class="item"><h4>Dates and Nuts</h4><p>Fresh Medjool with almonds. (تمر وجوز)</p><strong>$8.00</strong></div>
+        </div>
+    </section>
+    
+    <section class="gallery">
+        <h2>Gallery</h2>
+        <img src="https://via.placeholder.com/200x150/ffd700/000?text=Coffee+Cups" alt="Turkish Coffee">
+        <img src="https://via.placeholder.com/200x150/008080/fff?text=Shisha+Lounge" alt="Shisha Lounge">
+        <img src="https://via.placeholder.com/200x150/8b0000/fff?text=Baklava" alt="Baklava Display">
+        <img src="https://via.placeholder.com/200x150/f4e4bc/000?text=Takht+Seating" alt="Takht Seating">
+    </section>
+    
+    <section class="contact">
+        <h2>Reserve a Table or Contact Us</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Message or Reservation Details" rows="4"></textarea>
+            <button type="submit">Submit</button>
+        </form>
+        <p>Address: 123 Desert Lane, Cairo | Phone: (123) 456-7890 | Open: 8AM-10PM Daily</p>
+    </section>
+    
+    <footer>
+        <p>Follow us on Instagram @ArabianBrew | "Coffee is the common man's gold." – Arabic Saying</p>
+    </footer>
+    
+    <script>
+        // Simple scroll animation for items
+        window.addEventListener('scroll', () => {
+            const items = document.querySelectorAll('.item');
+            items.forEach(item => {
+                if (item.getBoundingClientRect().top < window.innerHeight - 50) {
+                    item.style.opacity = '1';
+                    item.style.transform = 'translateY(0)';
+                }
+            });
+        });
+        // Initial hide
+        document.querySelectorAll('.item').forEach(item => {
+            item.style.opacity = '0';
+            item.style.transform = 'translateY(20px)';
+            item.style.transition = 'all 0.5s';
+        });
+        // Form submission alert (basic)
+        document.querySelector('form').addEventListener('submit', (e) => {
+            e.preventDefault();
+            alert('Thank you! We\'ll get back to you soon.');
+        });
+    </script>
+</body>
+</html>
